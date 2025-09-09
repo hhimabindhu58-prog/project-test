@@ -1,0 +1,65 @@
+body
+{
+background-color:black;
+margin:-0%;
+height: 100vh;
+overflow: hidden;
+}
+.moon
+{
+    position:absolute;
+    top:100px;
+    left: 70%;
+    width: 120px;
+    height: 120px;
+    background-color:white;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 15px rgb(94, 91, 86);
+    animation-name: shadow-ani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shadow-ani{
+    from{box-shadow: 0 0 15px 9px rgb(131, 123, 123)}
+    to{box-shadow: 0 0 60px 25px rgb(111, 105, 105) }
+}
+.sun
+{
+    position:absolute;
+    top:100px;
+    right: 70%;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 98, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 40px 15px rgb(224, 209, 51);
+    animation-name: shadow-ani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shadow-ani{
+    from{box-shadow: 0 0 15px 9px rgb(108, 101, 101)}
+    to{box-shadow: 0 0 60px 25px rgb(134, 126, 126) }
+}
+.star{
+    position:absolute;
+    width: 4px;
+    height: 4px;
+    background-color:rgb(228, 234, 234);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0.5px rgb(115, 110, 110)
+}
+#s1
+{
+    top:100px;
+    left: 70px;
+}
+#s2
+{
+    top: 100px;
+    left: 70px;
+}
